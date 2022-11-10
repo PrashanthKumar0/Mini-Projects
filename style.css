@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    background: #000;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+}
+
+#wrapper {
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 100;
+}
+
+#btn_gen{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    padding:8px 15px;
+    font-size: 12px;
+    z-index: 1000;
+}
+body::before {
+    content: "Please Wait ...";
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 35px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
